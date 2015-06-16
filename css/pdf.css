@@ -1,3 +1,28 @@
 body {
     font-size: 0.75em;
 }
+
+@counter-style ncc{
+  type: numeric;
+  glyphs: '(1)', '(2)', '(3)', '(4)', '(5)', '(6)';
+}
+
+@counter-style kouotu{
+    type: alphabetic;
+    glyphs: '¥7532' '¥4E59' '¥4E19' '¥4E01' '¥620A';
+    /* '甲' '乙' '丙' '丁' '戊' */
+    suffix: '、';
+}
+
+ol {
+  counter-reset: section;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:before {
+  counter-increment: section;      /* section カウンタを増加 */
+  content: "(" counter(section) ") "; /* カウンタを表示 */
+}

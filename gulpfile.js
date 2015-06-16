@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var markdownpdf = require('gulp-markdown-pdf');
 
 gulp.task('buildpdf', function() {
+  console.log(__dirname+'/css/pdf.css')
   options = {
-    css: __dirname+'/css/pdf.css'
+    cssPath: __dirname+'/css/pdf.css'
   }
 
   gulp.src('./README.md')
