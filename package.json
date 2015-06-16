@@ -1,0 +1,23 @@
+{
+  "name": "regulation",
+  "version": "1.0.0",
+  "description": "yay",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-markdown-pdf": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/post-internet/regulation.git"
+  },
+  "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/post-internet/regulation/issues"
+  },
+  "homepage": "https://github.com/post-internet/regulation"
+}
